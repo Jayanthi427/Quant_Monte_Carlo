@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Project-specific outputs & local configs
+sim_config_run.json
+AUDIT_REPORT.md
+*.png
+*.jpg
