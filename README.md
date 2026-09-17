@@ -239,3 +239,178 @@ Compare Models and Assumptions
      │
      ▼
 Visualize Results
+
+---
+
+## Project Structure
+
+```text
+Quant_Monte_Carlo/
+│
+├── app/
+│   └── dashboard.py
+│
+├── models/
+│   ├── gbm.py
+│   ├── student_t.py
+│   ├── merton_jump_diffusion.py
+│   └── garch.py
+│
+├── pricing/
+│   ├── monte_carlo_pricing.py
+│   ├── black_scholes.py
+│   └── variance_reduction.py
+│
+├── risk/
+│   ├── var.py
+│   ├── expected_shortfall.py
+│   └── risk_analysis.py
+│
+├── diagnostics/
+│   ├── convergence.py
+│   ├── distributions.py
+│   └── model_comparison.py
+│
+├── data/
+├── tests/
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── .gitignore
+
+Installation
+1. Clone the Repository
+git clone https://github.com/Jayanthi427/Quant_Monte_Carlo.git
+cd Quant_Monte_Carlo
+2. Create a Virtual Environment
+Windows
+python -m venv .venv
+.venv\Scripts\activate
+macOS / Linux
+python3 -m venv .venv
+source .venv/bin/activate
+3. Install Dependencies
+pip install -r requirements.txt
+Usage
+
+Run the project using the appropriate entry point.
+
+python app/dashboard.py
+
+If the dashboard uses Streamlit, run:
+
+streamlit run app/dashboard.py
+
+The interface can be used to explore:
+
+Different stochastic models
+Simulation parameters
+Number of Monte Carlo paths
+Time horizons
+Volatility assumptions
+Option parameters
+Risk confidence levels
+Variance-reduction techniques
+Model-comparison outputs
+Example Research Questions
+
+This project can be used to investigate:
+
+How does increasing the number of simulations affect pricing convergence?
+How different are Monte Carlo prices from Black–Scholes prices under GBM assumptions?
+How do heavy-tailed returns affect VaR and Expected Shortfall?
+How do jumps change simulated price distributions?
+How does volatility clustering influence risk estimates?
+Do antithetic variates reduce pricing-estimator variance?
+When do Sobol sequences improve convergence?
+How sensitive are option prices to drift, volatility, maturity, and strike?
+How do different stochastic assumptions change simulated returns?
+What are the limitations of simplified financial models?
+Research and Educational Applications
+
+The project supports learning and experimentation in:
+
+Quantitative finance
+Financial mathematics
+Stochastic processes
+Derivatives pricing
+Numerical methods
+Statistical simulation
+Risk management
+Computational finance
+Probability and statistics
+Model validation
+Limitations
+
+This project is research-oriented and should not be treated as a production-grade pricing or risk platform.
+
+Important limitations include:
+
+Simplified model assumptions
+Parameter sensitivity
+Sampling error
+Dependence on input-data quality
+Limited historical-data validation
+Limited out-of-sample testing
+Simplified treatment of transaction costs and liquidity
+No guarantee that simulated results represent real market behavior
+Potential numerical instability under extreme parameter settings
+
+The outputs should be interpreted as model-dependent estimates rather than precise predictions of future market outcomes.
+
+Future Improvements
+
+Potential future improvements include:
+
+Improved historical-data pipelines
+More robust parameter calibration
+Genuine out-of-sample backtesting
+Additional stochastic-volatility models
+Heston model implementation
+Local-volatility modeling
+More advanced jump processes
+Greeks estimation
+Sensitivity analysis
+Better numerical benchmarking
+Parallelized simulation
+GPU acceleration
+More comprehensive automated tests
+Improved model-validation workflows
+Interactive experiment tracking
+Exportable research reports
+Expanded asset-class support
+Technologies
+Python
+NumPy
+SciPy
+Pandas
+Matplotlib
+Plotly
+Streamlit
+yFinance
+Statistical and numerical computing libraries
+Skills Demonstrated
+
+This project demonstrates practical work with:
+
+Stochastic-process modeling
+Monte Carlo simulation
+Derivatives pricing
+Black–Scholes benchmarking
+Quantitative risk analysis
+Value at Risk and Expected Shortfall
+Probability distributions
+Numerical methods
+Variance-reduction techniques
+Statistical diagnostics
+Financial data analysis
+Interactive data visualization
+Research-oriented software development
+
+Disclaimer
+
+This project is intended for educational, research, and experimentation purposes only.
+
+It does not provide financial advice, investment recommendations, trading signals, or guaranteed pricing or risk estimates.
+
+Financial models are simplified representations of market behavior. Their outputs depend on assumptions, parameters, data quality, and simulation methodology.
