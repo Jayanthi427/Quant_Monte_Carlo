@@ -410,7 +410,9 @@ Research-oriented software development
 Disclaimer
 
 This project is intended for educational, research, and experimentation purposes only.
+## License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 It does not provide financial advice, investment recommendations, trading signals, or guaranteed pricing or risk estimates.
 
 Financial models are simplified representations of market behavior. Their outputs depend on assumptions, parameters, data quality, and simulation methodology.
